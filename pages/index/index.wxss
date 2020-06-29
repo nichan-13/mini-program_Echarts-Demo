@@ -1,0 +1,199 @@
+page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to right, #071d79, #445dcf, #071d79);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+li {
+  list-style: none;
+}
+
+.header {
+  position: relative;
+}
+
+.head-img {
+  width: 100%;
+  height: 100rpx;
+  position: absolute;
+  opacity: 0.8;
+}
+
+.header text {
+  position: relative;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.chart-box {
+  padding: 50rpx 30rpx;
+}
+
+.panel {
+  position: relative;
+  height: 500rpx;
+  margin-bottom: 30rpx;
+  border: 1px solid rgba(36, 224, 168, 0.418);
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.panel image {
+  position: absolute;
+}
+
+.panel text {
+  display: flex;
+  justify-content: center;
+  padding-top: 10rpx;
+}
+
+.panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 10px;
+  border-left: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+  content: '';
+}
+.panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+  content: '';
+}
+.panel .panel-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.panel .panel-footer::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 10px;
+  border-left: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+  content: '';
+}
+.panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+  content: '';
+}
+
+.panel .year1 {
+  width: 70rpx;
+  height: 40rpx;
+  margin-right: 5rpx;
+  color: rgba(226, 226, 226, 0.774);
+  background-color: rgba(240, 244, 255, 0.178);
+  position: absolute;
+  right: 120rpx;
+  top: 2%;
+  padding: 0 5rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+
+.panel .year2 {
+  width: 70rpx;
+  height: 40rpx;
+  margin-right: 5rpx;
+  color: rgba(226, 226, 226, 0.774);
+  background-color: rgba(240, 244, 255, 0.178);
+  position: absolute;
+  right: 35rpx;
+  top: 2%;
+  padding: 0 5rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+}
+
+.map-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.map {
+  position: relative;
+  height: 800rpx;
+}
+.map .map1 {
+  width: 620rpx;
+  height: 620rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+}
+.map .map2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700rpx;
+  height: 700rpx;
+  animation: rotate1 15s linear infinite;
+  opacity: 0.8;
+}
+.map .map3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 670rpx;
+  height: 670rpx;
+  animation: rotate2 15s linear infinite;
+}
+.map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10.125rem;
+  width: 100%;
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+.map-chart {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}

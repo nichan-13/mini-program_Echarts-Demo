@@ -1,0 +1,73 @@
+<view class="header">
+	<image class="head-img" src="/images/head_bg.png"></image>
+	<text>ECharts - miniprogram</text>
+</view>
+
+<view class="chart-box">
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>柱形图 - 就业行情</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>柱形图 - 就业情况</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar2" canvas-id="mychart-bar2" ec="{{ ec2 }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>折线图 - 人员变化</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar3" canvas-id="mychart-bar3" ec="{{ ec3 }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>折线图 - 播放量</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar4" canvas-id="mychart-bar4" ec="{{ ec4 }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>饼形图 - 年龄分布</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar5" canvas-id="mychart-bar5" ec="{{ ec5 }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+	<view class="panel">
+		<image src="/images/line.png"></image>
+		<text>饼形图 - 地区分布</text>
+		<view class="chart">
+			<ec-canvas id="mychart-dom-bar6" canvas-id="mychart-bar6" ec="{{ ec6 }}"></ec-canvas>
+		</view>
+		<view class="panel-footer"></view>
+	</view>
+
+
+	<view class="map-box">
+		<view class="map">
+			<image class="map1" src="/images/map.png"></image>
+			<image class="map2" src="/images/lbx.png"></image>
+			<image class="map3" src="/images/jt.png"></image>
+			<view class="map-chart">
+				<ec-canvas id="mychart-dom-map" canvas-id="mychart-map" ec="{{ map }}"></ec-canvas>
+			</view>
+		</view>
+	</view>
+
+</view>
